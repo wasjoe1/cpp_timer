@@ -29,23 +29,7 @@ int main() {
     std::cout << "5 second timer ended! closing all other unfinished threads" << std::endl;
 }
 
-// 1. (issue)
-    /*
-    currently there are many occasions where 5s timer starts b4 sleep_wait executed
-    this is not intended as we executed the timer first
-    likely reasons of failure:
-        a. concurrency/ race condition
-        b. std::cout's buffer
-    => resolve this issue!
-    */
-
-// 2. (another implementation)
-    /*
-    we want to also be able to create a timer for busy task; implent busy_wait below
-    (we will need an alert to context switch out of the busy task)
-    */
-
-
 void busy_wait() {
+    // TODO:
     // empty task that needs to be done => CPU heavy
 }
