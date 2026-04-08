@@ -1,0 +1,10 @@
+# to ignore CMake build directories
+build/
+cmake-build*/
+
+# to ignore .clang-format
+.clang-format
+
+# ignore any cached files
+.cache/
+.vscode/
