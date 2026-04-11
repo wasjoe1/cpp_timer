@@ -1,11 +1,13 @@
 # quick notes
 TODO
-- ensure sync issue resolves => currently the timer program & actual worker function is executing in a non-deterministic manner
-- ensure timer is a plug & playable module => now the timer logic and worker logic is coupled together; i want an easy to import & use timer that wouldnt need the user to look too much into the implementation
+
 
 DOING
 
 DONE
+- ensure sync issue resolves => currently the timer program & actual worker function is executing in a non-deterministic manner
+    - resovled this by having a deterministic timer that ends by deadline
+- ensure timer is a plug & playable module => now the timer logic and worker logic is coupled together; i want an easy to import & use timer that wouldnt need the user to look too much into the implementation
 - write a 5 sec timer, which alerts when time ends
 
 
